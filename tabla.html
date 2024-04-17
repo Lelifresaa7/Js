@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tabla Dinámica</title>
+    <link rel="stylesheet" href="/bootstrap.min.css">
+    <link rel="stylesheet" href="tablita.css">
+
+</head>
+
+<style > .slider {
+  -webkit-appearance: none;
+  width: 90%;
+  height: 15px;
+  border-radius: 10px;
+  background: pink;
+  opacity: 0.6;
+
+}
+table {
+        border-collapse: collapse;
+    }
+
+    table, th, td {
+        border: 1px solid pink;
+        padding: 8px;
+        
+        
+    }
+    h2{
+      background: pink;
+        opacity: 0.7;
+    }</style>
+ 
+<body class="text-center">
+
+<h2>Tablita</h2>
+
+<h4 >Filas:</h4>
+
+<input type="range" id="filas" name="filas" min="1" max="50" value="10" class="slider" class="form-control" oninput="fi()">
+
+<span id="resultado1">4</span>
+<br><br>
+
+<h4 >Columnas:</h4>
+
+<input type="range" id="columnas" name="columnas" min="1" max="50" value="10" class="slider" class="form-control" oninput="co()">
+
+<span id="resultado2">4</span>
+
+<br><br>
+
+<div id="resultado3"></div>
+
+
+
+<script src="app.js" >
+
+
+  
+</script>
+
+</body>
+</html>
